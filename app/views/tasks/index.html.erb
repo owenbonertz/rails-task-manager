@@ -1,6 +1,7 @@
 <ul>
   <% @tasks.each do |devoir| %>
     <li><%= link_to "#{devoir.title}", "tasks/#{devoir.id}" %></li>
+    <li> <%= link_to "Delete this one", delete_path %></li>
   <% end %>
 </ul>
 <h3><%= link_to "Add a new task", "tasks/new" %></h3>
