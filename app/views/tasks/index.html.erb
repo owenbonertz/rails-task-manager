@@ -1,5 +1,6 @@
 <ul>
   <% @tasks.each do |devoir| %>
-    <li><%= devoir.title %></li>
+    <li><%= link_to "#{devoir.title}", "tasks/#{devoir.id}" %></li>
   <% end %>
 </ul>
+<h3><%= link_to "Add a new task", "tasks/new" %></h3>
